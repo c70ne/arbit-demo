@@ -8,23 +8,23 @@ import css from '../../styles/General.module.css'
 import Cards from '../../components/Cards'
 import Header from '../../components/Header'
 
-// export async function getServerSideProps(context) {
+export async function getServerSideProps(context) {
 
-//     const session = await getSession(context)
+    const session = await getSession(context)
   
-//     if (!session) {
-//         return {
-//             redirect: {
-//                 destination: '/',
-//                 permanent: false,
-//             },
-//         }
-//     }
+    if (!session) {
+        return {
+            redirect: {
+                destination: '/',
+                permanent: false,
+            },
+        }
+    }
   
-//     return {
-//         props: { session }
-//     }
-// }
+    return {
+        props: { session }
+    }
+}
 
 export default function Analytics({ children }) {
 
