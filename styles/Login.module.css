@@ -1,0 +1,65 @@
+.login {
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(60, 82, 50, 1);
+}
+  
+.h1 {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 15px;
+    padding: 4px 2px 12px 0px;
+    color: rgba(253, 247, 242, 1);
+    font-family: 'Major Mono Display', monospace;
+    font-size: 5rem;
+}
+  
+.h2 {
+    padding-top: 0.4em;
+    color: rgba(253, 247, 242, 1);
+    font-size: 2.25rem;
+}
+  
+.h3 {
+    padding-bottom: 0.75em;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+  
+.h4 {
+    margin-bottom: 1em;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.25rem;
+}
+  
+.chips {
+    width: 200px;
+    text-align: center;
+}
+
+.login_options {
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
+    border-radius: 15px;
+    padding: 2em;
+    background-color: rgba(253, 247, 242, 0.8);
+}
+
+.span {
+    margin: 0.25em;
+    border-radius: 15px;
+    padding: 0em 0.9em;
+    font-size: 0.9em;
+}

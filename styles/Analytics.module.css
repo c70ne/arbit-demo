@@ -1,0 +1,132 @@
+.card_grid {
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 2em;
+}
+
+.card {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 0.6em 1.25em;
+    background-color: rgba(255, 255, 255, 1);
+}
+  
+.card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.card_title {
+    width: 100%;
+    margin-right: 0.25em;
+    font-size: 1.2rem;
+}
+
+.card_title_input {
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 0.9rem;
+}
+
+.card_menu {
+  width: min-content;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: -14px;
+}
+
+.card_menu_item {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.card_body {
+    height: 100%;
+    padding: 0.5em 0em;
+}
+  
+.data_selection {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a b"
+    "c d";
+    grid-column-gap: 1em;
+}
+  
+.top_left {
+    grid-area: a;
+}
+  
+.top_right {
+    grid-area: b;
+}
+  
+.bottom_left {
+    grid-area: c;
+}
+  
+.bottom_right {
+    grid-area: d;
+}
+  
+.top_left,
+.top_right,
+.bottom_left,
+.bottom_right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+  
+.top_left_title,
+.top_right_title,
+.bottom_left_title {
+    padding-bottom: 0.6em;
+    font-size: .8rem;
+    font-weight: 600;
+}
+  
+.bottom_right_title {
+    display: inherit;    
+}
+  
+.top_left_select,
+.top_right_select,
+.bottom_left_select,
+.bottom_right_select {
+    width: 100%;
+    margin-bottom: 0.6em;
+    border-radius: 5px;
+    padding: 8px;
+}
+  
+.bottom_right_select {
+    border: 1.5px solid rgba(60, 82, 50, 1);
+    background-color: rgba(60, 82, 50, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-weight: 600;
+}
+  
+.bottom_right_select:disabled {
+    opacity: 0.3;
+}
