@@ -92,69 +92,6 @@ export default function Cards(props) {
                                 </option>
                             </select>
                         </div>
-                        {/* <div className={styles.top_left}>
-                            <Box>
-                                <FormControl fullWidth size='small'>
-                                    <InputLabel 
-                                        id='dex-select-label'
-                                    >
-                                        DEX
-                                    </InputLabel>
-                                    <Select
-                                        labelId='dex-select-label'
-                                        id={card.id}
-                                        name='dexTitle'
-                                        value={card.dexTitle}
-                                        label='dex'
-                                        onChange={cardHandler}
-                                        sx={{ minWidth: 10 }}
-                                    >
-                                        <MenuItem 
-                                            value={'Uniswap'}
-                                        >
-                                            Uniswap
-                                        </MenuItem>
-                                        <MenuItem 
-                                            value={'Sushiswap'} 
-                                            disabled
-                                        >
-                                            Sushiswap
-                                        </MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </Box>
-                        </div>
-                        <div className={styles.top_right}>
-                            <Box>
-                            <FormControl fullWidth size='small'>
-                                <InputLabel 
-                                    id='view-select-label'
-                                >
-                                    View
-                                </InputLabel>
-                                <Select
-                                    labelId='view-select-label'
-                                    id={card.id}
-                                    name='view'
-                                    value={card.view}
-                                    label='view'
-                                    onChange={cardHandler}
-                                >
-                                    <MenuItem 
-                                        value={'Pair Swaps'}
-                                    >
-                                        Pair Swaps
-                                    </MenuItem>
-                                    <MenuItem 
-                                        value={'All Swaps'} 
-                                        disabled
-                                    >
-                                        All Swaps
-                                    </MenuItem>
-                                </Select>
-                            </FormControl>
-                            </Box>
-                        </div> */}
                         <div className={styles.bottom_left}>
                             <p className={styles.bottom_left_title}>
                                 3. Pair {!card.dexPairId && 
